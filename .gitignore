@@ -1,0 +1,12 @@
+# Tajné prístupové kľúče a heslá — NIKDY nesmú do repozitára
+.env
+.env.*
+
+# Systémové a dočasné súbory
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Závislosti (ak by si neskôr používal Node/npm)
+node_modules/

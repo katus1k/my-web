@@ -1,0 +1,32 @@
+{
+  // Prostredie pre kurz "Tvorba webstránok".
+  // Otvorí sa vo VS Code v prehliadači (Codespaces) s predpripraveným
+  // AI asistentom (Copilot) a živým náhľadom webu (Live Preview).
+  "name": "Tvorba webstránok",
+
+  // Malý, rýchlo štartujúci základ. Statickému webu (HTML/CSS/JS) stačí.
+  // (Ak by si neskôr chcel 11ty/Node, odkomentuj sekciu "features" nižšie.)
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-vscode.live-server"
+      ],
+      "settings": {
+        "livePreview.defaultPreviewPath": "/index.html",
+        "files.autoSave": "afterDelay"
+      }
+    }
+  },
+
+  // "features": {
+  //   "ghcr.io/devcontainers/features/node:1": { "version": "lts" }
+  // },
+
+  "portsAttributes": {
+    "3000": { "label": "Náhľad webu", "onAutoForward": "openPreview" }
+  }
+}
