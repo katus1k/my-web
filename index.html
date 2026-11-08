@@ -3,33 +3,470 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#f8f7f2">
+  <meta name="description" content="Psychologické centrum, kde si môžete pokojne vybrať individuálnu, párovú alebo detskú terapiu.">
+  <title>Psychologické centrum — priestor, kde môžete začať</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="#domov" aria-label="Psychologické centrum — úvod">
+      <span class="brand-mark" aria-hidden="true">p</span>
+      <span>psychologické<br><strong>centrum</strong></span>
+    </a>
+    <nav class="main-nav" aria-label="Hlavná navigácia">
+      <a href="#individual">Individuálna</a>
+      <a href="#couples">Párová</a>
+      <a href="#children">Detská</a>
+      <a href="#o-nas">O centre</a>
+    </nav>
+    <a class="button button-small button-dark header-cta" href="#prihlasenie">Prihlásenie <span aria-hidden="true">↗</span></a>
+  </header>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+  <main>
+    <section class="hero section-wrap" id="domov" data-view="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Psychologické centrum</p>
+        <h1><span class="hero-negation">Nie</span> všetko<br>musíte zvládnuť <em class="hero-confetti-word" aria-label="sami." aria-live="polite"><span aria-hidden="true">s</span><span aria-hidden="true">a</span><span aria-hidden="true">m</span><span aria-hidden="true">i</span><span aria-hidden="true">.</span></em></h1>
+        <p class="hero-intro">Nájdite si podporu, ktorá rešpektuje vašu situáciu aj vaše tempo. Spoločne sa pozrieme na to, čo práve potrebujete.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#sluzby">Vybrať typ terapie <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#priebeh">Ako vyzerá prvé stretnutie <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-icon" aria-hidden="true">✳</span>
+          <p>Začať rozhovor je dosť.<br><strong>Nemusíte mať všetko vyriešené.</strong></p>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrácia pokojného a bezpečného priestoru" role="img">
+        <div class="art-sun"></div>
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-plant plant-left"><i></i><i></i><i></i><i></i><b></b></div>
+        <div class="art-plant plant-right"><i></i><i></i><i></i><i></i><b></b></div>
+        <div class="art-chair chair-left"><div class="chair-back"></div><div class="chair-seat"></div><div class="chair-leg"></div></div>
+        <div class="art-chair chair-right"><div class="chair-back"></div><div class="chair-seat"></div><div class="chair-leg"></div></div>
+        <div class="art-table"><span></span></div>
+        <div class="art-rug"></div>
+        <div class="art-caption"><span class="caption-star">✳</span><span>Miesto pre<br><strong>váš príbeh.</strong></span></div>
+        <span class="art-label label-top">vlastným tempom</span>
+        <span class="art-label label-bottom">bez posudzovania</span>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span> Objavte, čo vám môže pomôcť</div>
+    </section>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
-    </div>
+    <section class="services section-wrap" id="sluzby" data-view="home">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Každý príbeh je iný</p>
+          <h2>Začnime tým,<br><em>čo riešite vy.</em></h2>
+        </div>
+        <p class="section-intro">Vyberte si oblasť, ktorá je vám najbližšia. Ak si nie ste istí, je v poriadku začať aj bez presnej odpovede.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card service-individual">
+          <div class="service-topline"><span class="service-number">01</span><span class="service-icon" aria-hidden="true">◌</span></div>
+          <h3>Individuálna<br>terapia</h3>
+          <p>Bezpečný priestor na rozhovor o tom, čo prežívate. Spoločne môžete hľadať nové porozumenie aj praktické kroky.</p>
+          <div class="service-tags"><span>Úzkosť</span><span>OCD</span><span>Osobný rozvoj</span></div>
+          <a class="card-link" href="#individual">Spoznajte odborníkov <span aria-hidden="true">↗</span></a>
+          <span class="card-decoration" aria-hidden="true">○</span>
+        </article>
+        <article class="service-card service-couples">
+          <div class="service-topline"><span class="service-number">02</span><span class="service-icon" aria-hidden="true">♡</span></div>
+          <h3>Párová<br>terapia</h3>
+          <p>Neutrálne miesto, kde dostanú priestor obaja. Učte sa spolu hovoriť o tom, čo je vo vašom vzťahu dôležité.</p>
+          <div class="service-tags"><span>Komunikácia</span><span>Vzťah</span><span>Porozumenie</span></div>
+          <a class="card-link" href="#couples">Spoznajte odborníkov <span aria-hidden="true">↗</span></a>
+          <span class="card-decoration" aria-hidden="true">♡</span>
+        </article>
+        <article class="service-card service-children">
+          <div class="service-topline"><span class="service-number">03</span><span class="service-icon" aria-hidden="true">✳</span></div>
+          <h3>Detská<br>terapia</h3>
+          <p>Citlivá podpora pre dieťa aj rodiča. Pomáhame porozumieť tomu, čo dieťa prežíva, a hľadať možnosti pomoci.</p>
+          <div class="service-tags"><span>Emócie</span><span>Správanie</span><span>Podpora rodičov</span></div>
+          <a class="card-link" href="#children">Spoznajte odborníkov <span aria-hidden="true">↗</span></a>
+          <span class="card-decoration" aria-hidden="true">✳</span>
+        </article>
+      </div>
+      <p class="service-footnote"><span aria-hidden="true">✳</span> Nie ste si istí, kam patríte? Spolu nájdeme najvhodnejší prvý krok.</p>
+    </section>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+    <section class="approach" id="pristup" data-view="home">
+      <div class="approach-inner section-wrap">
+        <div class="approach-visual" aria-hidden="true">
+          <div class="approach-circle circle-outer"></div>
+          <div class="approach-circle circle-middle"></div>
+          <div class="approach-circle circle-inner">
+            <span>Vaše<br><em>tempo.</em></span>
+          </div>
+          <span class="approach-spark spark-one">✳</span>
+          <span class="approach-spark spark-two">✳</span>
+          <span class="approach-side-note">bezpečne · spolu · postupne</span>
+        </div>
+        <div class="approach-copy">
+          <p class="eyebrow eyebrow-light">Priestor, ktorý patrí vám</p>
+          <h2>Najprv počúvame.<br><em>Potom hľadáme.</em></h2>
+          <p>Požiadať o pomoc môže byť veľký krok. Nemusíte vedieť, čo presne povedať, ani mať pripravený plán. Na stretnutí začneme tam, kde práve ste.</p>
+          <ul class="approach-points">
+            <li><span>01</span> Rozhovor bez tlaku na rýchle riešenia</li>
+            <li><span>02</span> Rešpekt k vašej jedinečnej situácii</li>
+            <li><span>03</span> Spoločné hľadanie cesty vpred</li>
+          </ul>
+          <a class="button button-light" href="#priebeh">Spoznajte prvé stretnutie <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="o-nas" data-view="about">
+      <div class="section-heading about-heading">
+        <div>
+          <p class="eyebrow">Psychologické centrum</p>
+          <h2>Odborne aj <em>ľudsky.</em></h2>
+        </div>
+        <p class="section-intro">Bezpečný priestor, rešpektujúci prístup a jasné informácie na každom kroku.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-column about-column-primary">
+        <article class="about-values">
+          <h3>Na čom nám záleží</h3>
+          <dl>
+            <div><dt>Dôvera</dt><dd>Vytvárame bezpečný priestor na otvorený rozhovor.</dd></div>
+            <div><dt>Odbornosť</dt><dd>Opierame sa o odborné poznatky a individuálny prístup.</dd></div>
+            <div><dt>Diskrétnosť</dt><dd>Chránime súkromie a dôvernosť každého klienta.</dd></div>
+            <div><dt>Ľudskosť</dt><dd>Pristupujeme ku každému bez predsudkov a s porozumením.</dd></div>
+          </dl>
+        </article>
+        <section class="about-prices" id="cennik" aria-labelledby="prices-title">
+          <h3 id="prices-title">Cenník</h3>
+          <p class="price-note">Cena za hodinu konzultácie</p>
+          <div class="price-list">
+            <div class="price-group">
+              <h4>Individuálna terapia</h4>
+              <p><span>Mgr. Natália Kováčová</span><strong>10 €</strong></p>
+              <p><span>PhDr. Martina Novotná</span><strong>8 €</strong></p>
+              <p><span>Mgr. Tomáš Hruška</span><strong>10 €</strong></p>
+            </div>
+            <div class="price-group">
+              <h4>Párová terapia</h4>
+              <p><span>Mgr. Martin Kováč</span><strong>10 €</strong></p>
+              <p><span>Mgr. Lucia Novotná</span><strong>10 €</strong></p>
+            </div>
+            <div class="price-group">
+              <h4>Detská terapia</h4>
+              <p><span>Mgr. Petra Šimková</span><strong>8,50 €</strong></p>
+              <p><span>Mgr. Tomáš Bielik</span><strong>10 €</strong></p>
+              <p><span>Mgr. Veronika Poláková</span><strong>9 €</strong></p>
+            </div>
+          </div>
+        </section>
+        </div>
+        <div class="about-column about-column-secondary">
+        <section class="about-reviews" aria-labelledby="reviews-title">
+          <div class="review-heading">
+            <h3 id="reviews-title">Skúsenosti klientov</h3>
+            <p class="review-score" tabindex="0" role="img" aria-label="Priemerné hodnotenie 4,8 z 5 hviezdičiek"><strong>4,8</strong> / 5 <span aria-hidden="true">★★★★★</span></p>
+          </div>
+          <p class="review-sample-note">Ukážkové texty na nahradenie skutočnými recenziami.</p>
+          <details class="review-compose">
+            <summary class="review-add"><span class="review-add-icon" aria-hidden="true">+</span><span>Napísať recenziu</span></summary>
+            <form class="review-form" id="review-form">
+              <label for="review-name">Meno <span>(nepovinné)</span></label>
+              <input id="review-name" name="name" autocomplete="name" maxlength="60">
+              <label for="review-rating">Hodnotenie</label>
+              <select id="review-rating" name="rating" required>
+                <option value="">Vyberte počet hviezdičiek</option>
+                <option value="5">5 hviezdičiek</option>
+                <option value="4">4 hviezdičky</option>
+                <option value="3">3 hviezdičky</option>
+                <option value="2">2 hviezdičky</option>
+                <option value="1">1 hviezdička</option>
+              </select>
+              <label for="review-text">Vaša recenzia</label>
+              <textarea id="review-text" name="text" rows="4" maxlength="500" required></textarea>
+              <p class="review-form-note">Recenzia sa zobrazí iba v tomto náhľade; po obnovení stránky sa stratí.</p>
+              <button class="button button-dark" type="submit">Zobraziť recenziu</button>
+              <p class="review-form-status" id="review-form-status" role="status" aria-live="polite"></p>
+            </form>
+          </details>
+          <div class="review-list" id="review-list" tabindex="0" role="region" aria-label="Ukážkové recenzie, posúvateľný zoznam">
+            <blockquote data-rating="5">
+              <div class="review-stars" aria-label="Päť hviezdičiek">★★★★★</div>
+              <p>„Super, odporúčam.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+            <blockquote data-rating="5">
+              <div class="review-stars" aria-label="Päť hviezdičiek">★★★★★</div>
+              <p>„Najlepšie poradenstvo, ktoré som navštívila. Oplatí sa cenovo.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+            <blockquote data-rating="5">
+              <div class="review-stars" aria-label="Päť hviezdičiek">★★★★★</div>
+              <p>„Veľmi príjemné a pokojné prostredie.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+            <blockquote data-rating="5">
+              <div class="review-stars" aria-label="Päť hviezdičiek">★★★★★</div>
+              <p>„Oceňujem citlivý prístup a možnosť hovoriť vlastným tempom.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+            <blockquote data-rating="5">
+              <div class="review-stars" aria-label="Päť hviezdičiek">★★★★★</div>
+              <p>„Všetko mi bolo zrozumiteľne vysvetlené.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+            <blockquote data-rating="5">
+              <div class="review-stars" aria-label="Päť hviezdičiek">★★★★★</div>
+              <p>„Komunikácia pri dohadovaní termínu bola jednoduchá.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+            <blockquote data-rating="5">
+              <div class="review-stars" aria-label="Päť hviezdičiek">★★★★★</div>
+              <p>„Cítila som sa vypočutá a rešpektovaná.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+            <blockquote data-rating="5">
+              <div class="review-stars" aria-label="Päť hviezdičiek">★★★★★</div>
+              <p>„Páčilo sa mi, že sme postupovali bez zbytočného tlaku.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+            <blockquote data-rating="4">
+              <div class="review-stars" aria-label="Štyri hviezdičky">★★★★</div>
+              <p>„Stretnutie bolo užitočné, na voľný termín som však čakala dlhšie.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+            <blockquote data-rating="4">
+              <div class="review-stars" aria-label="Štyri hviezdičky">★★★★</div>
+              <p>„Prístup bol profesionálny, uvítala by som viac možností termínov.“</p>
+              <cite>Anonymne</cite>
+            </blockquote>
+          </div>
+        </section>
+        <section class="about-map" aria-labelledby="map-title">
+          <h3 id="map-title">Orientačný bod v Žiline</h3>
+          <a class="map-placeholder" href="https://www.openstreetmap.org/?mlat=49.2215702&amp;mlon=18.7427482#map=18/49.2215702/18.7427482" target="_blank" rel="noreferrer" aria-label="Otvoriť orientačný bod pri Mestskom úrade Žilina v OpenStreetMap">
+            <span class="map-road map-road-one"></span>
+            <span class="map-road map-road-two"></span>
+            <span class="map-pin" aria-hidden="true">●</span>
+            <p>Námestie obetí komunizmu 1<br><strong>010 01 Žilina · pri Mestskom úrade</strong></p>
+          </a>
+        </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-wrap" id="priebeh" data-view="home">
+      <div class="section-heading process-heading">
+        <div>
+          <p class="eyebrow">Bez zbytočných otáznikov</p>
+          <h2>Ako môže vyzerať<br><em>prvý krok?</em></h2>
+        </div>
+        <p class="section-intro">Terapia sa začína rozhovorom. Spoločne zistíte, čo by vám mohlo pomôcť a či vám spôsob práce vyhovuje.</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <span class="step-number">01</span>
+          <span class="step-icon" aria-hidden="true">⌕</span>
+          <h3>Vyberte si oblasť</h3>
+          <p>Individuálna, párová alebo detská terapia — začnite tým, čo sa najviac približuje vašej situácii.</p>
+        </article>
+        <article class="step">
+          <span class="step-number">02</span>
+          <span class="step-icon" aria-hidden="true">♡</span>
+          <h3>Spoznajte odborníka</h3>
+          <p>Prečítajte si o zameraní a prístupe odborníkov. Dôležité je, aby ste sa pri výbere cítili dobre.</p>
+        </article>
+        <article class="step">
+          <span class="step-number">03</span>
+          <span class="step-icon" aria-hidden="true">↗</span>
+          <h3>Dohodnite si stretnutie</h3>
+          <p>Keď nájdete vhodného odborníka, dohodnite si prvý rozhovor a pýtajte sa na všetko, čo potrebujete vedieť.</p>
+        </article>
+      </div>
+      <div class="reassurance"><span class="reassurance-mark" aria-hidden="true">✳</span><p><strong>Prvé stretnutie nie je záväzok.</strong> Je to príležitosť zistiť, či vám spolupráca vyhovuje.</p></div>
+    </section>
+
+    <section class="directory section-wrap" id="odbornici" data-view="therapy">
+      <div class="section-heading directory-heading">
+        <div>
+          <p class="eyebrow">Vyberte si svoju cestu</p>
+          <h2>Spoznajte našich<br><em>odborníkov.</em></h2>
+        </div>
+        <p class="section-intro">Prečítajte si o zameraní a prístupe jednotlivých psychológov. Cenu konzultácie nájdete pri každom profile.</p>
+      </div>
+      <p class="portrait-note"><span aria-hidden="true">✳</span> Portréty odborníkov sú doplnené.</p>
+
+      <section class="therapist-group" id="individual" aria-labelledby="individual-title">
+        <div class="group-heading"><h3 id="individual-title">Individuálna terapia</h3><a href="#cennik">Cenník <span aria-hidden="true">↗</span></a></div>
+        <div class="profile-grid">
+          <article class="profile-card">
+            <img class="profile-portrait" src="img/natalia-kovacova.png" alt="Portrét Mgr. Natálie Kováčovej">
+            <div class="profile-content">
+              <p class="profile-degree">Mgr.</p><h4>Natália Kováčová</h4>
+              <p>Individuálna psychologická poradkyňa. V bezpečnom a dôvernom prostredí pomáha porozumieť pocitom, obavám a životným výzvam a hľadať cestu k väčšej pohode a rovnováhe.</p>
+              <div class="profile-meta"><span>Individuálna konzultácia</span><strong>10 € <small>/ hod.</small></strong></div>
+              <button class="button button-dark booking-button" type="button" data-therapist="Mgr. Natália Kováčová">Prihlásenie <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+          <article class="profile-card">
+            <img class="profile-portrait" src="img/martina-novotna.png" alt="Portrét PhDr. Martiny Novotnej">
+            <div class="profile-content">
+              <p class="profile-degree">PhDr.</p><h4>Martina Novotná</h4>
+              <p>Ponúka individuálne konzultácie s dôrazom na porozumenie, rešpekt a potreby každého človeka. Pomáha lepšie porozumieť emóciám a zvládať náročné situácie.</p>
+              <div class="profile-meta"><span>Individuálna konzultácia</span><strong>8 € <small>/ hod.</small></strong></div>
+              <button class="button button-dark booking-button" type="button" data-therapist="PhDr. Martina Novotná">Prihlásenie <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+          <article class="profile-card">
+            <img class="profile-portrait" src="img/tomas-hruska.png" alt="Portrét Mgr. Tomáša Hrušku">
+            <div class="profile-content">
+              <p class="profile-degree">Mgr.</p><h4>Tomáš Hruška</h4>
+              <p>Zameriava sa na podporu duševného zdravia, osobnostný rozvoj a zvládanie pracovných, rodinných či medziľudských vzťahov. Pomáha objavovať silné stránky a nové možnosti.</p>
+              <div class="profile-meta"><span>Individuálna konzultácia</span><strong>10 € <small>/ hod.</small></strong></div>
+              <button class="button button-dark booking-button" type="button" data-therapist="Mgr. Tomáš Hruška">Prihlásenie <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="therapist-group" id="couples" aria-labelledby="couples-title">
+        <div class="group-heading"><h3 id="couples-title">Párová terapia</h3><a href="#cennik">Cenník <span aria-hidden="true">↗</span></a></div>
+        <div class="profile-grid">
+          <article class="profile-card">
+            <img class="profile-portrait" src="img/martin-kovac.png" alt="Portrét Mgr. Martina Kováča">
+            <div class="profile-content">
+              <p class="profile-degree">Mgr.</p><h4>Martin Kováč</h4>
+              <p>Pomáha párom znovu nájsť spoločnú reč, otvorene komunikovať a pochopiť potreby toho druhého. Spoločne hľadajú cestu k pevnejšiemu a spokojnejšiemu vzťahu.</p>
+              <div class="profile-meta"><span>Párová konzultácia</span><strong>10 € <small>/ hod.</small></strong></div>
+              <button class="button button-dark booking-button" type="button" data-therapist="Mgr. Martin Kováč">Prihlásenie <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+          <article class="profile-card">
+            <img class="profile-portrait" src="img/Tepl%C3%BD%20portr%C3%A9t%20%C5%BEeny%20v%20dom%C3%A1cej%20kancel%C3%A1rii.png" alt="Portrét Mgr. Lucie Novotnej">
+            <div class="profile-content">
+              <p class="profile-degree">Mgr.</p><h4>Lucia Novotná</h4>
+              <p>Pomáha partnerom obnoviť vzájomné porozumenie a dôveru. Spoločne hľadajú nové možnosti, ako prekonať náročné obdobie alebo ďalej rozvíjať svoj vzťah.</p>
+              <div class="profile-meta"><span>Párová konzultácia</span><strong>10 € <small>/ hod.</small></strong></div>
+              <button class="button button-dark booking-button" type="button" data-therapist="Mgr. Lucia Novotná">Prihlásenie <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="therapist-group" id="children" aria-labelledby="children-title">
+        <div class="group-heading"><h3 id="children-title">Detská terapia</h3><a href="#cennik">Cenník <span aria-hidden="true">↗</span></a></div>
+        <div class="profile-grid">
+          <article class="profile-card">
+            <img class="profile-portrait" src="img/petra-simkova.png" alt="Portrét Mgr. Petry Šimkovej">
+            <div class="profile-content">
+              <p class="profile-degree">Mgr.</p><h4>Petra Šimková</h4>
+              <p>Pomáha deťom porozumieť vlastným pocitom a zvládať náročné situácie v bezpečnom a priateľskom prostredí. Spolu s rodičmi hľadá cesty, ako podporiť ich spokojný vývin.</p>
+              <div class="profile-meta"><span>Detská konzultácia</span><strong>8,50 € <small>/ hod.</small></strong></div>
+              <button class="button button-dark booking-button" type="button" data-therapist="Mgr. Petra Šimková">Prihlásenie <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+          <article class="profile-card">
+            <img class="profile-portrait" src="img/tomas-bielik.png" alt="Portrét Mgr. Tomáša Bielika">
+            <div class="profile-content">
+              <p class="profile-degree">Mgr.</p><h4>Tomáš Bielik</h4>
+              <p>Podporuje deti, ktoré zápasia so stresom, školou, vzťahmi s rovesníkmi alebo životnými zmenami. V rozhovoroch primeraných veku pomáha rozvíjať zvládanie emócií a sebavedomie.</p>
+              <div class="profile-meta"><span>Detská konzultácia</span><strong>10 € <small>/ hod.</small></strong></div>
+              <button class="button button-dark booking-button" type="button" data-therapist="Mgr. Tomáš Bielik">Prihlásenie <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+          <article class="profile-card">
+            <img class="profile-portrait" src="img/veronika-polakova.png" alt="Portrét Mgr. Veroniky Polákovej">
+            <div class="profile-content">
+              <p class="profile-degree">Mgr.</p><h4>Veronika Poláková</h4>
+              <p>Pomáha deťom cítiť sa bezpečne a rodičom lepšie porozumieť ich potrebám. Spoločne hľadajú riešenia pre zdravý emocionálny vývin a spokojnejšie rodinné vzťahy.</p>
+              <div class="profile-meta"><span>Detská konzultácia</span><strong>9 € <small>/ hod.</small></strong></div>
+              <button class="button button-dark booking-button" type="button" data-therapist="Mgr. Veronika Poláková">Prihlásenie <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="appointment" id="prihlasenie" data-view="appointment">
+      <div class="appointment-inner section-wrap">
+        <div class="appointment-copy">
+          <p class="eyebrow eyebrow-light">Prvý krok k stretnutiu</p>
+          <h2>Prihlásenie<br><em>na konzultáciu.</em></h2>
+          <p>Vyplňte údaje, skontrolujte ich a potvrďte žiadosť.</p>
+        </div>
+        <form class="appointment-form" id="appointment-form" method="post">
+          <a class="appointment-close" href="#domov" aria-label="Späť na hlavnú stránku" title="Späť na hlavnú stránku"><span aria-hidden="true">×</span></a>
+          <div class="appointment-fields" id="appointment-fields">
+          <div class="form-row">
+            <label>Meno <span aria-hidden="true">*</span><input name="given-name" autocomplete="given-name" required></label>
+            <label>Priezvisko <span aria-hidden="true">*</span><input name="family-name" autocomplete="family-name" required></label>
+          </div>
+          <div class="form-row form-row-address">
+            <label>Adresa <span aria-hidden="true">*</span><input name="street-address" autocomplete="street-address" required></label>
+            <label>PSČ <span aria-hidden="true">*</span><input name="postal-code" autocomplete="postal-code" inputmode="numeric" required></label>
+          </div>
+          <div class="form-row">
+            <label>Telefónne číslo <span aria-hidden="true">*</span><input name="tel" type="tel" autocomplete="tel" required></label>
+            <label>E-mail <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" required></label>
+          </div>
+          <label>Psychológ <span aria-hidden="true">*</span>
+            <select id="therapist-select" name="therapist" required>
+              <option value="">Vyberte odborníka</option>
+              <optgroup label="Individuálna terapia">
+                <option>Mgr. Natália Kováčová</option><option>PhDr. Martina Novotná</option><option>Mgr. Tomáš Hruška</option>
+              </optgroup>
+              <optgroup label="Párová terapia">
+                <option>Mgr. Martin Kováč</option><option>Mgr. Lucia Novotná</option>
+              </optgroup>
+              <optgroup label="Detská terapia">
+                <option>Mgr. Petra Šimková</option><option>Mgr. Tomáš Bielik</option><option>Mgr. Veronika Poláková</option>
+              </optgroup>
+            </select>
+          </label>
+          <label>Poznámka <textarea name="message" rows="3"></textarea></label>
+          <button class="button button-dark" type="submit">Skontrolovať žiadosť <span aria-hidden="true">↗</span></button>
+          </div>
+          <section class="appointment-review" id="appointment-review" aria-labelledby="appointment-review-title" tabindex="-1" hidden>
+            <h3 id="appointment-review-title">Skontrolujte údaje</h3>
+            <dl class="appointment-summary" id="appointment-summary"></dl>
+            <div class="appointment-review-actions">
+              <button class="button button-outline" id="edit-request" type="button">Upraviť údaje</button>
+              <button class="button button-dark" id="send-request" type="button">Odoslať žiadosť <span aria-hidden="true">↗</span></button>
+            </div>
+          </section>
+          <section class="mail-animation" id="mail-animation" aria-live="polite" hidden>
+            <div class="mail-stage" aria-hidden="true">
+              <div class="mail-envelope"></div>
+              <div class="send-confetti"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <h3 class="thank-you">Ďakujeme</h3>
+          </section>
+        </form>
+      </div>
+    </section>
+
+    <section class="closing" data-view="home">
+      <div class="closing-shape shape-left" aria-hidden="true"></div>
+      <div class="closing-shape shape-right" aria-hidden="true"></div>
+      <div class="closing-content">
+        <span class="closing-star" aria-hidden="true">✳</span>
+        <p class="eyebrow eyebrow-light">Prvý krok môže byť malý</p>
+        <h2>Nemusíte vedieť<br>všetko. Stačí <em>začať.</em></h2>
+        <p>Preskúmajte možnosti podpory a vyberte si cestu, ktorá vám dáva zmysel.</p>
+        <a class="button button-light" href="#prihlasenie">Prihlásiť sa na konzultáciu <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#domov" aria-label="Psychologické centrum — úvod">
+      <span class="brand-mark" aria-hidden="true">p</span>
+      <span>psychologické<br><strong>centrum</strong></span>
+    </a>
+    <p>Priestor, kde môžete začať.</p>
+    <a class="footer-top" href="#domov">Späť na hlavnú stránku <span aria-hidden="true">↑</span></a>
+    <span class="footer-copy">© Psychologické centrum</span>
+  </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
